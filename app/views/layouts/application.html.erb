@@ -14,5 +14,9 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+    <br>
+    <% if session[:source]%>
+      Thanks you for reaching us from <%= session[:source]%>
+    <% end %>
   </body>
 </html>
